@@ -25,8 +25,8 @@ namespace Taskplay
             MenuItem contextItemSettings = new MenuItem();
             MenuItem contextItemExit = new MenuItem();
             //Setup the context menu items
-            contextItemSettings.Text = "&Settings";
-            contextItemExit.Text = "&Exit";
+            contextItemSettings.Text = "&Настройки";
+            contextItemExit.Text = "&Выход";
             contextItemSettings.Click += new EventHandler(contextMenuSettings_Click);
             contextItemExit.Click += new EventHandler(contextMenuExit_Click);
             //Add the context menu items to the context menu
@@ -34,19 +34,19 @@ namespace Taskplay
             contextMenu.MenuItems.Add(contextItemExit);
             //Setup nextIcon
             nextIcon.Icon = Properties.Resources.Forward;
-            nextIcon.Text = "Next";
+            nextIcon.Text = "Следующий";
             nextIcon.Visible = true;
             nextIcon.MouseClick += new MouseEventHandler(nextIcon_MouseClick);
             nextIcon.ContextMenu = contextMenu;
             //Setup playIcon
             playIcon.Icon = Properties.Resources.Play;
-            playIcon.Text = "Play / Pause";
+            playIcon.Text = "Играть / Пауза";
             playIcon.Visible = true;
             playIcon.MouseClick += new MouseEventHandler(playIcon_MouseClick);
             playIcon.ContextMenu = contextMenu;
             //Setup previousIcon
             previousIcon.Icon = Properties.Resources.Backward;
-            previousIcon.Text = "Previous";
+            previousIcon.Text = "Предыдущий";
             previousIcon.Visible = true;
             previousIcon.MouseClick += new MouseEventHandler(previousIcon_MouseClick);
             previousIcon.ContextMenu = contextMenu;
